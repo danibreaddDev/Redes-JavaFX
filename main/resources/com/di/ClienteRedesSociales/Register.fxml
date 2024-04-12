@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="688.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.di.ClienteRedesSociales.RegisterController">
+   <children>
+      <AnchorPane prefHeight="60.0" prefWidth="600.0" style="-fx-background-color: #5E17EB;">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="97.0" layoutX="37.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../assets/icons8-comprobar-contraseña-100.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="121.0" layoutY="17.0" text="USER REGISTRATION" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="41.0" layoutY="100.0" text="Firstname">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="FirstnameTextField" layoutX="55.0" layoutY="121.0" prefHeight="25.0" prefWidth="471.0" promptText="Firstname" />
+      <Label layoutX="41.0" layoutY="157.0" text="Lastname">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="LastnameTextField" layoutX="55.0" layoutY="180.0" prefHeight="25.0" prefWidth="471.0" promptText="Lastname" />
+      <Label layoutX="41.0" layoutY="212.0" text="Username">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="UsernameTextField" layoutX="55.0" layoutY="236.0" prefHeight="25.0" prefWidth="471.0" promptText="Username" />
+      <Label layoutX="41.0" layoutY="269.0" text="Password">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="PasswordTextField" layoutX="55.0" layoutY="295.0" prefHeight="25.0" prefWidth="471.0" promptText="Password" />
+      <Label layoutX="41.0" layoutY="329.0" text="Confirm Password">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="ConfirmPasswordTextField" layoutX="55.0" layoutY="355.0" prefHeight="25.0" prefWidth="471.0" promptText="Confirm Password" />
+      <Button fx:id="RegisterButton" layoutX="55.0" layoutY="538.0" mnemonicParsing="false" onAction="#RegisterButtonOnAction" prefHeight="25.0" prefWidth="471.0" style="-fx-background-color: #5E17EB;" text="Register" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="CloseButton" layoutX="55.0" layoutY="608.0" mnemonicParsing="false" onAction="#CloseRegister" prefHeight="25.0" prefWidth="471.0" style="-fx-background-color: #5E17EB;" text="Close" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Label fx:id="RegistrationMessageLabel" layoutX="27.0" layoutY="74.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="PasswordMatchLabel" layoutX="195.0" layoutY="330.0" prefHeight="19.0" prefWidth="0.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="42.0" layoutY="392.0" text="Email">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="EmailTextField" layoutX="56.0" layoutY="415.0" prefHeight="25.0" prefWidth="471.0" promptText="Email" />
+      <Label layoutX="42.0" layoutY="451.0" text="Phone">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <TextField fx:id="PhoneTextField" layoutX="56.0" layoutY="474.0" prefHeight="25.0" prefWidth="471.0" promptText="Phone" />
+   </children>
+</AnchorPane>
