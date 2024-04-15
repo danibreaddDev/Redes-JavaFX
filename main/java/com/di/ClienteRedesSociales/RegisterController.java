@@ -47,8 +47,8 @@ public class RegisterController {
     private TextField EmailTextField;
     @FXML
     private TextField PhoneTextField;
-    private String emailFrom = "danpammes@alu.edu.gva.es";
-    private String contraseña = "cB0J052J";
+    private String emailFrom = "";
+    private String contraseña = "";
     private String emailTo;
     private String subject;
     private String content;
